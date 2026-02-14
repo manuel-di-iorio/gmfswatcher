@@ -34,6 +34,10 @@ Retrieves the next event from the queue.
 Stops the monitoring thread and cleans up resources.
 - **Returns**: `1.0` on success.
 
+### `fswatcher_onchange(callback)`
+A GML wrapper function that simplifies event handling.
+- **Arguments**: `callback` (Function) - A function that receives `(event, path, [newPath])`.
+
 ## Usage Example (GML)
 
 In your **Create Event**:
@@ -47,6 +51,17 @@ if (fswatcher_start(target_path)) {
 
 In your **Step Event**:
 ```gml
+// Using the convenient wrapper
+fswatcher_onchange(function(event, path, newPath) {
+    if (event == "RENAMED") {
+        show_debug_message("RENAMED: " + path + " -> " + newPath);
+    } else {
+        show_debug_message(event + ": " + path);
+    }
+});
+
+/* 
+// Or manual polling if you prefer
 var event = fswatcher_poll();
 while (event != "") {
     var data = string_split(event, "|");
@@ -70,6 +85,7 @@ while (event != "") {
     // Poll next event in the same frame
     event = fswatcher_poll();
 }
+*/
 ```
 
 In your **Clean Up / Game End Event**:
