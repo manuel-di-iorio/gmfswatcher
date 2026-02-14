@@ -1,0 +1,1 @@
+fswatcher_start("C:\\Users\\Manuel\\GameMakerProjects\\fswatcher\\datafiles");
