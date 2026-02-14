@@ -22,7 +22,7 @@
     {"id":{"name":"fswatcher","path":"extensions/fswatcher/fswatcher.yy",},},
     {"id":{"name":"oTest","path":"objects/oTest/oTest.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
-    {"id":{"name":"fswatcher_on_change","path":"scripts/fswatcher_on_change/fswatcher_on_change.yy",},},
+    {"id":{"name":"fswatcher_onchange","path":"scripts/fswatcher_onchange/fswatcher_onchange.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

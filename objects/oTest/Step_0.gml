@@ -1,4 +1,4 @@
-fswatcher_on_change(function(event, path, newPath) {
+fswatcher_onchange(function(event, path, newPath) {
   if (event == "RENAMED") {
     show_debug_message(event + " - OLD: " + path + " - NEW: " + newPath);
   } else {

@@ -1,4 +1,4 @@
-function fswatcher_on_change(cb) {
+function fswatcher_onchange(cb) {
   var event = fswatcher_poll();
   if (event == "") return;
     

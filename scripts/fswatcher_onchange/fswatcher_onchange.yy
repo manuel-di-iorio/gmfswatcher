@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"fswatcher_on_change",
+  "%Name":"fswatcher_onchange",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"fswatcher_on_change",
+  "name":"fswatcher_onchange",
   "parent":{
     "name":"fswatcher",
     "path":"fswatcher.yyp",
