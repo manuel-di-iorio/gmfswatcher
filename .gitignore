@@ -60,3 +60,29 @@ Temporary Items
 
 # GMRT build directory
 Build
+
+# Visual Studio 2022
+.vs/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.aps
+*.pdb
+*.log
+*.obj
+*.tlog
+*.lastbuildstate
+*.idb
+*.iobj
+*.ipdb
+*.recipe
+*.VC.db
+ipch/
+*.opendb
+*.db-shm
+*.db-wal
